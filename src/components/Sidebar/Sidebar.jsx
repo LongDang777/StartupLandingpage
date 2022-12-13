@@ -19,7 +19,10 @@ export default function Sidebar(props) {
             // eslint-disable-next-line jsx-a11y/anchor-is-valid
             <a
               style={{ color: active === title && "#25CB9E" }}
-              onClick={() => handleClickToScroll(ref)}
+              onClick={() => {
+                handleClickToScroll(ref);
+                toggleSidebar();
+              }}
               key={id}
               className="sidebar__item"
             >
