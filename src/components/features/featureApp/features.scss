@@ -1,0 +1,250 @@
+#features {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  color: black;
+  .feature__contains {
+    margin: 0;
+    min-width: 0;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+.feature__title {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin-top: -5px;
+  margin-bottom: 50px;
+  p {
+    font-size: 12px;
+    letter-spacing: 1.5px;
+    font-weight: 700;
+    line-height: 1.5;
+    color: var(--heading-primary);
+    text-transform: uppercase;
+    margin-bottom: 8px;
+    opacity: 1;
+  }
+  h2 {
+    font-size: 24px;
+    color: var(--heading-secondary);
+    line-height: 1.3;
+    text-align: center;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+  }
+}
+
+.feature__content {
+  width: 100%;
+  margin: 0;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0;
+  padding-right: 0;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 35px 0;
+
+  .feature__item {
+    display: flex;
+    align-items: flex-start;
+    text-align: center;
+    flex-direction: column;
+
+    img {
+      max-width: 100%;
+      width: 80px;
+      height: auto;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 15px;
+    }
+  }
+}
+
+.feature__item-text {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  h2 {
+    letter-spacing: -0.5px;
+    font-size: 18px;
+    color: var(--heading-secondary);
+    line-height: 1.4;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+  p {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.85;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  #features {
+    .feature__contains {
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+  }
+  .feature__content {
+    width: 80%;
+    .feature__item {
+      padding-left: 15px;
+      padding-right: 15px;
+      img {
+        width: 90px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 640px) {
+  #features {
+    #features {
+      padding-top: 100px;
+      padding-bottom: 100px;
+    }
+  }
+  .feature__title {
+    margin-bottom: 60px;
+    p {
+      font-size: 14px;
+      letter-spacing: 2px;
+    }
+    h2 {
+      font-size: 28px;
+    }
+  }
+  .feature__content {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 40px 0;
+    width: 100%;
+    .feature__item{
+      img {
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #features {
+    .feature__contains {
+      max-width: 780px;
+    }
+  }
+  .feature__title {
+    h2 {
+      line-height: 1.2;
+    }
+  }
+  .feature__content {
+    padding-left: 40px;
+    padding-right: 40px;
+    .feature__item {
+      padding-left: 25px;
+      padding-right: 25px;
+    }
+  }
+  .feature__item-text {
+    p{
+      line-height: 1.9;
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  #features {
+    .feature__contains {
+      max-width: 1020px;
+    }
+  }
+  .feature__title {
+    margin-bottom: 65px;
+  }
+  .feature__content {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .feature__item-text {
+    p{
+      line-height: 2;
+    }
+  }
+}
+
+@media screen and (min-width: 1220px) {
+  #features {
+    padding-top: 120px;
+    padding-bottom: 120px;
+    .feature__contains {
+      max-width: 1200px;
+    }
+  }
+  .feature__title {
+    margin-bottom: 75px;
+    h2 {
+      font-size: 32px;
+    }
+  }
+  .feature__content {
+    padding-left: 80px;
+    padding-right: 80px;
+    .feature__item {
+      padding-left: 30px;
+      padding-right: 30px;
+      
+      img {
+        width: 100px;
+        margin-bottom: 25px;
+      }
+    }
+  }
+  .feature__item-text {
+    h2 {
+      font-size: 20px;
+      margin-bottom: 15px;
+    }
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  .feature__content {
+    .feature__item {
+      padding-left: 40px;
+      padding-right: 40px;
+      img {
+        width: auto;
+      };
+    }
+  }
+}
+
+@media screen and (min-width: 1620) {
+  #features {
+    .feature__contains {
+      max-width: 1310;
+    }
+  }
+  .feature__title {
+    h2 {
+      font-size: 36px;
+    }
+  }
+  .feature__content {
+    padding-top: 15px;
+    .feature__item {
+      padding-left: 60px;
+      padding-right: 60px;
+    }
+  }
+}

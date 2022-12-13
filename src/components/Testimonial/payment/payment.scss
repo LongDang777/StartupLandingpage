@@ -1,0 +1,147 @@
+#payment {
+  overflow: hidden;
+  position: relative;
+  padding-top: 100px;
+
+  .payment__overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    z-index: -1;
+    width: 100%;
+    background-image: url("../../../asset//images/overlayPament.jpg");
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-size: cover;
+  }
+  .payment__container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}
+.payment__img {
+  margin-bottom: -10px;
+  // margin-left: -20px;
+  padding-right: 30px;
+  order: 2;
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+.payment__right {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  flex-shrink: 0;
+  text-align: center;
+  padding-top: 0;
+  padding-left: 0;
+  padding-bottom: 50px;
+  padding-right: 0;
+
+  .payment__content {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    flex-shrink: 0;
+  }
+}
+
+.title.payment__title {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+
+@media screen and (min-width: 480px) {
+  .payment__right {
+    width: 420px;
+  }
+}
+
+@media screen and (min-width: 640px) {
+  .payment__img {
+    padding-right: 50px;
+  }
+  .payment__right {
+    width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #payment {
+    .payment__overlay {
+      width: calc(50% + 400px);
+    }
+    .payment__container {
+      flex-wrap: nowrap;
+    }
+  }
+  .payment__img {
+    padding-right: 0;
+    order: 0;
+  }
+  .payment__right {
+    width: 380px;
+    text-align: left;
+    padding-top: 20px;
+    padding-left: 40px;
+    padding-bottom: 100px;
+  }
+
+  .title.payment__title {
+    align-items: flex-start;
+    padding-left: 0;
+    h2 {
+      text-align: left;
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  #payment {
+    .payment__overlay {
+      width: calc(50% + 480px);
+    }
+  }
+
+  .payment__img {
+    margin-left: 0;
+  }
+
+  .payment__right {
+    width: 500px;
+    padding-top: 50px;
+    padding-left: 90px;
+  }
+
+  .title.payment__title {
+    p {
+      margin-bottom: 15px;
+    }
+  }
+}
+
+@media screen and (min-width: 1220px) {
+  .payment__right {
+    width: 570px;
+    padding-right: 30px;
+  }
+}
+@media screen and (min-width: 1366px) {
+  .payment__right {
+    padding-top: 20px;
+  }
+}
+
+@media screen and (min-width: 1620px) {
+  .payment__right {
+    padding-top: 80px;
+  }
+}
