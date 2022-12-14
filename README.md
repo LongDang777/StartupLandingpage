@@ -1,4 +1,4 @@
-Link deploy: https://longdang777.github.io/LandingPageStart/
+Link deploy: https://longdang777.github.io/StartupLandingpage/
 
 # Getting Started with Create React App
 
