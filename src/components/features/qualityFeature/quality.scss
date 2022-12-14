@@ -1,7 +1,7 @@
 #qualityFeature {
   padding-top: 80px;
   padding-bottom: 80px;
-  color: var(--heading-secondary);
+  // color: var(--heading-secondary);
 
   .qualityFeature__contains {
     width: 100%;
@@ -87,6 +87,7 @@
     font-size: 15px;
     font-weight: 400;
     line-height: 1.85;
+    color: var(--clr-primary);
   }
 }
 
@@ -202,6 +203,13 @@
 }
 
 @media screen and (min-width: 1620px) {
+
+  #qualityFeature{
+    .qualityFeature__contains {
+      max-width: 1310px;
+    }
+  }
+
   .quality__title {
     h2 {
       font-size: 36px;

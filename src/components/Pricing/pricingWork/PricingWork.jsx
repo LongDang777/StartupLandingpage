@@ -119,7 +119,7 @@ export default function PricingWork() {
                   <ul className="item__main">
                     {packageList.map(({ id, status, description }) => (
                       <li className="item__description" key={id} style={{ opacity: status !== "open" && 0.5 }}>
-                        <button>
+                        <button style={{color: status === "close" && "white", opacity: status !== "open" && 0.5}}>
                           {status === "open" ? check : unchecked}
                         </button>
                         {description}
